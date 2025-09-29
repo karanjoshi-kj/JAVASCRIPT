@@ -1,3 +1,6 @@
+// TYPE CHECKING S THE METHOD OF CHECKING WHICH DATATYPE IS BEEN USED .
+
+
 var a = 10;
 console.log(a);
 
