@@ -1,3 +1,5 @@
+// VARIABLES IN JAVASCRIPT . 
+
 const a = 10;
 console.log(a);
 
