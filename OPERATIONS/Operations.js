@@ -14,5 +14,4 @@ console.log(typeof D);
 E=console.log(1 + 2 + "2"); // IF THE STRING IS IN THE LAST THEN FIRST THE OPERATION WILL BE PERFORMED THEN AFTER THAT IT IS TREATED AS STRING 
 console.log(typeof E);
 
-GIT STATUS
 
