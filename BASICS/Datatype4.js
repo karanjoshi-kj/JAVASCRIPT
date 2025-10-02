@@ -13,3 +13,4 @@
 // NOTE :
 // THE TYPEOF NULL IS OBJECT . 
 console.log(typeof null);
+    
