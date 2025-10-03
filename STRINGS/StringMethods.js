@@ -38,6 +38,8 @@ console.log(url.includes('karan'));// ASKING TO THE URL THAT KARAN EXISTS OR NOT
 
 //METHOD TO CONVERT THE STRING INTO ARRAY 
 console.log(gamename.split('-')); 
+console.log();
+
 
 
 
