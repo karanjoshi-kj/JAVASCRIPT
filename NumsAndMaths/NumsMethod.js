@@ -19,4 +19,6 @@ const hundreds = 1000000
 console.log(hundreds.toLocaleString()); // IT WILL APPLY COMMAS ON THE STRING ACCORDING TO THE US STANDARD (DEFAULT).....
 console.log(hundreds.toLocaleString("en-IN")); // INDIAN FORMAT 
 
+console.log(Math.round(9.4)); // LOWER VALUE 
+console.log(Math.round(9.6)); // UPPER VALUE 
 
