@@ -1,0 +1,17 @@
+// ARRAY IS A COLLECTION OF VARIOUS ELEMENT WHICH CAN STORE HETROGENOUS DATA .
+// THE SIZE OF ARRAY IS HETROGENOUS IN NATURE MEANS IT'S SIZE CAN BE CHANGE IN THE CODE EXECUTION TIME .
+
+// THERE ARE TWO METHODS IN JS TO DECLARE AN ARRAY . 
+// 1) SUBSCRIPT METHOD . 
+// 2) THROUGH OBJECT . 
+
+// METHOD 1 . 
+let arr1 = [1 , 5 , "karan" , 20 , "hello" ]
+console.log(arr1);
+
+
+// METHOD 2 . 
+let arr2 = new Array(10 , 8 ,"karan" , 45 , "hlo")
+console.log(arr2);
+
+
