@@ -1,6 +1,8 @@
 // WE WILL DISCUSS METHODS IN ARRAY . 
 let arr1  = [1,5,"karan" , 18 , "hii"];
 console.log(arr1);
-
 console.log("the size of the array is" , arr1.length);
 
+
+let arr2  = [1,10,"karan" , 18 , "hii"];
+console.log("the size of the array is" , arr2.length);
