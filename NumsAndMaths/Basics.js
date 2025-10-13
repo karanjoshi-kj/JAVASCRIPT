@@ -1,3 +1,5 @@
+// BASICS .. 
+
 const marks = 100
 console.log(marks);
 
