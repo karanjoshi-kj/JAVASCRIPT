@@ -16,7 +16,7 @@ console.log(arr.at(3));
 // ! conversion to array 
 let a=10;
 let b=20;
-let c=30;
+let c=30;   
 
 d=Array.of(a,b,c)
 console.log(d);
