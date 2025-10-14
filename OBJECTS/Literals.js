@@ -47,3 +47,10 @@ const jsUser2 = {
 }
 console.log(jsUser2[mysmb1]);
 
+// TODO , NOW SOME BASIC TERMINOLOGIES OF OBJECT ..
+
+// ? , IF WE WANT TO CHANGE THE EMAIL
+jsUser2.email = "Karanjoshi@microsoft.com";
+console.log(jsUser2.email);
+
+
