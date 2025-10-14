@@ -7,4 +7,17 @@ const instauser1 = {}
 instauser1.id = "587user"
 instauser1.name = "RAJ"
 instauser1.isLoggedin = false
-console.log(instauser1);
+// console.log(instauser1);
+
+
+const regularuser = {
+     email:"karanjoshi@goggle.com",
+     fullname:{
+        userfullname:{
+            firstname:"karan",
+            lastname:"joshi"
+        }
+     }
+}
+// ?ACCESSING OF NESTED OBJECCTS
+console.log(regularuser.fullname.userfullname.firstname);
