@@ -13,5 +13,32 @@ console.log(arr3);
 console.log(arr.at(3));
 
 
+// ! conversion to array 
+let a=10;
+let b=20;
+let c=30;
+
+d=Array.of(a,b,c)
+console.log(d);
+
+
+// ? SPREAD OPERATOR 
+a1 = [1,2,3,4,5,6,7,8];
+a3 = Array.of(a1 , a , b , c) // ! THIS WILL DO NESTED ARRAY IN THE A3 ARRAY , BUT IF I DON'T WANT TO DO IT SO I WILL USE NESTED ARRAY ..
+console.log(a3);
+
+// ?TO SHOW SPACE BETWEEN TO ARRAYS 
+console.log();
+console.log();
+console.log();
+console.log();
+
+a4 = Array.of(...a1 , a , b , c);
+console.log(a4);
+
+
+
+
+
 
 
