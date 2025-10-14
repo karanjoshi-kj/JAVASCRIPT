@@ -65,6 +65,11 @@ jsUser2.greeting = function () {
     console.log("HI,EVERYONE !!!!!");
 }
 console.log(jsUser2.greeting); //! THIS WILL PRINT  UNDEFINED 
-console.log(jsUser2.greeting()); //! THIS WILL SHOW AN ERROR BCOZZ WE HAD FREEZE THE OBJECT .. , SO TO RESOLVE THE ERROR APLLY COMMENTS ON  THE OBJECT FREEZE ..  
+console.log(jsUser2.greeting()); //! THIS WILL SHOW AN ERROR BCOZZ WE HAD FREEZE THE OBJECT .. , SO TO RESOLVE THE ERROR APLLY COMMENTS ON  THE OBJECT FREEZE .. 
 
-
+// ? , IF I WANT TO REFER THE OBJECT NAME .. 
+jsUser2.greetingtwo = function () {
+    console.log(`HI,EVERYONE !!!!! , ${this.name}`);
+}
+console.log(jsUser2.greeting());
+console.log(jsUser2.greetingtwo());
