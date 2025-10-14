@@ -56,7 +56,15 @@ console.log(jsUser2.email);
 
 // TODO , LET SAY IF WANT TO LOCK A KEY VALUE MEANS NO ONE CAN CHANGE IT .
 jsUser2.email = "Karanjoshi@microsoft.com";
-Object.freeze(jsUser2)
+// Object.freeze(jsUser2)
 jsUser2.email = "karanjoshi@faang.com" //? THERE WILL BE NO CHANGE BCOZZ WE HAD FREEZE THE KEY VALUE ....
 console.log(jsUser2); //! NOTE : HERE THE SYMBOL WILL DIRECTELY COME BEFORE THE KEY VALUE BCOZZ WE HAD USE THE  SQUARE BRACES .. 
+
+// TODO , IF WE WANT TO ADD AN KEY VALUE PAIR ..
+jsUser2.greeting = function () {
+    console.log("HI,EVERYONE !!!!!");
+}
+console.log(jsUser2.greeting); //! THIS WILL PRINT  UNDEFINED 
+console.log(jsUser2.greeting()); //! THIS WILL SHOW AN ERROR BCOZZ WE HAD FREEZE THE OBJECT .. , SO TO RESOLVE THE ERROR APLLY COMMENTS ON  THE OBJECT FREEZE ..  
+
 
