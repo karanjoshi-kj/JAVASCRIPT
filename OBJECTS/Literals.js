@@ -49,8 +49,14 @@ console.log(jsUser2[mysmb1]);
 
 // TODO , NOW SOME BASIC TERMINOLOGIES OF OBJECT ..
 
+
 // ? , IF WE WANT TO CHANGE THE EMAIL
 jsUser2.email = "Karanjoshi@microsoft.com";
 console.log(jsUser2.email);
 
+// TODO , LET SAY IF WANT TO LOCK A KEY VALUE MEANS NO ONE CAN CHANGE IT .
+jsUser2.email = "Karanjoshi@microsoft.com";
+Object.freeze(jsUser2)
+jsUser2.email = "karanjoshi@faang.com" //? THERE WILL BE NO CHANGE BCOZZ WE HAD FREEZE THE KEY VALUE ....
+console.log(jsUser2); //! NOTE : HERE THE SYMBOL WILL DIRECTELY COME BEFORE THE KEY VALUE BCOZZ WE HAD USE THE  SQUARE BRACES .. 
 
