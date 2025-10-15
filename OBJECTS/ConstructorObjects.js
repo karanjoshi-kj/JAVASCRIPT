@@ -20,10 +20,16 @@ const regularuser = {
      }
 }
 // ?ACCESSING OF NESTED OBJECCTS
-// console.log(regularuser.fullname.userfullname.firstname);
+console.log(regularuser.fullname.userfullname.firstname);
 
 // TODO , MERGING OF THE TWO OBJECTS......
 obj1 = {1 : "a" , 2 : "b"}
 obj2 = {3 : "c" , 4 : "d"}
-const obj3 = Object.assign(obj1 , obj2)
+// ?METHOD 1 :const obj3 = Object.assign(obj1 , obj2)
+// ?METHOD 2 --> IT IS GOOD METHOD FOR MERGING OF THE OBJECTS IN JAVASCIRPT BCOZZ THIS IS AN OPTIONAL PARAMETER WHICH ACTS AS TARGET FOR OTHER SOURCE ....  
+// const obj3 = Object.assign({} , obj1 , obj2) //! OBJECT ASSIGN IS A STATIC METHOD .. 
 console.log(obj3);
+// TODO , BUT WE DON'T USE THESE METHODS ON INDUSTRIES , WE USE SPREADING CONCEPT 
+const obj3 = {...obj1 , ...obj2}
+console.log(obj3);
+
