@@ -5,7 +5,7 @@
 
 // TODO , the value of key object using array .. 
 const jsUser2 = {
-    name: "KARAN",
+    "name": "KARAN",  //! INTERNALLY READING THE KEYS AS THE STRING 
     "full name":"KARAN JOSHI",
     // [mysmb1]:"mykey1",
     age: 18,
