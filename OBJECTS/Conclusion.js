@@ -1,0 +1,17 @@
+// TODO , THERE IS THIRD METHOD OF DECALRING AND DEFINING THE OBJECTS IN JAASCRIPT 
+
+const obj = {};
+console.log(obj);
+
+obj.name = "karan joshi"
+age = 19;
+
+obj.name = "karan"
+obj.age = 20
+console.log(obj);
+
+// ? POINTS TO BE NOTED 
+// !SEE CAREFULLY I HAD DECLARED THE NAME & AGE EARLIER BUT WHEN I HAVE UPDATED IT IT GETS UPDATED ..  
+
+// TODO , MEANS STRINGS ARE MUTABLE IN NATURE ..
+
