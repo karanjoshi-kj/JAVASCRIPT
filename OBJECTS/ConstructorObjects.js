@@ -21,7 +21,7 @@ const regularuser = {
 }
 // ?ACCESSING OF NESTED OBJECCTS
 console.log(regularuser.fullname.userfullname.firstname);
-
+``
 // TODO , MERGING OF THE TWO OBJECTS......
 obj1 = {1 : "a" , 2 : "b"}
 obj2 = {3 : "c" , 4 : "d"}
@@ -31,5 +31,25 @@ obj2 = {3 : "c" , 4 : "d"}
 console.log(obj3);
 // TODO , BUT WE DON'T USE THESE METHODS ON INDUSTRIES , WE USE SPREADING CONCEPT 
 const obj3 = {...obj1 , ...obj2}
-console.log(obj3);
+// console.log(obj3);
 
+
+// TODO , WHEN VALUES COMES FROM THE DATABSES WE USE ARRAY OF OBJECS .. 
+
+const users = [
+    {
+        id:1,
+        email:"karan@gmail.com"
+    },
+    {
+        id:2,
+        email:"karan@gmail.com"
+    },
+    {
+        id:3,
+        email:"karan@gmail.com"
+    },
+]
+
+users[1].email
+console.log(regularuseruser);
