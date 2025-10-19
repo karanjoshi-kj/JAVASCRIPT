@@ -11,3 +11,5 @@ console.log(instructorname);
 // ? THE FOLLOWING SYNTAX IS LIKE THIS : 
 const{instructorname : ins } = course;
 console.log(ins);
+
+ 

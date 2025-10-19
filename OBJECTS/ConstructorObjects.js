@@ -44,7 +44,7 @@ const users = [
     {
         id:2,
         email:"karan@gmail.com"
-    },
+    },                                 
     {
         id:3,
         email:"karan@gmail.com"
@@ -53,3 +53,10 @@ const users = [
 
 users[1].email
 console.log(regularuseruser);
+
+
+// !INTERVIEW TOPICS :  
+obj1 = {"full-name" : "karan" , "age" : 19},
+obj2 = {"full-name" : "karan" , "age" : 19}
+obj3 = {...obj1 , obj2}  // TODO , NOW OBJ1 ARE DIRECT KEY VALUE PAIR FOR OBJ3 & WE DON'T SPREAD THE OBJ2 SO OBJ2 IS KEY FOR OBJ1 AND ITS CURLY BARCES ELEMENTS ARE IT'S VALUES         
+console.log(obj3);
