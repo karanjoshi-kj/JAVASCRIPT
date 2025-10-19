@@ -35,4 +35,10 @@
 
  console.log(obj3);
  console.log(obj4);
+
+//  OBJECT DESTRUCTURING USING SPREAD OPERATOR 
+ obj5 = {...obj1 , ...obj2};
+ console.log(obj1[1]);
+ console.log(obj2[1]);
+ 
  
