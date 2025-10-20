@@ -8,7 +8,7 @@ const {instructorname} = course;
 console.log(instructorname);
 
 // TODO , NPW IF I FEEL THAT THE INSTRUCTOR NAME IS VERY LARGE THEN I CAN GIVE IT A SMALLER VALUE 
-// ? THE FOLLOWING SYNTAX IS LIKE THIS : 
+// ? THE FOLLOWING SYNTAX IS LIKE THIS : ACCESSBELATOR ..
 const{instructorname : ins } = course;
 console.log(ins);
 
