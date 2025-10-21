@@ -26,3 +26,10 @@ function Handleobject(Anyobject) { //? WE CAN PASS ANY PARAMETER TO IT  ..
 Handleobject(user)
 
 // TODO , FUNCTIONS WITH ARRAY.. 
+const mynewarray = [200,300,400,500]
+
+function Secondusername(getarray) {
+    return getarray[2];
+}
+console.log(Secondusername(mynewarray));
+
