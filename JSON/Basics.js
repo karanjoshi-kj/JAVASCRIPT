@@ -13,7 +13,8 @@
 //! BASICS STRUCTURE
 //? DATA IS STORED IN KEY-VALUE PAIR .
 
-info = {
+//!THIS IS AN INVALID JSON BCOZZ JSON CANNOT HAVE VARIABLE ASSIGNMENT LIKE INFO , IT MUST HAVE A SINGLE VALUE(OBJECT & ARRAY)
+const info = {
     "name":"karan",
     "age":19,
     "isstudent":true,
@@ -24,3 +25,21 @@ info = {
         "pincode":263645
     }
 }
+
+//TODO , VALID JSON -->
+// {
+//     "name": "karan",
+//     "age": 19,
+//     "isstudent": true,
+//     "skills": [
+//         "java",
+//         "pyhton",
+//         "c++",
+//         "DSA"
+//     ],
+//     "address": {
+//         "street": "1/24",
+//         "city": "ranikhet",
+//         "pincode": 263645
+//     }
+// }
