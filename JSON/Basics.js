@@ -27,19 +27,16 @@ const info = {
 }
 
 //TODO , VALID JSON -->
-// {
-//     "name": "karan",
-//     "age": 19,
-//     "isstudent": true,
-//     "skills": [
-//         "java",
-//         "pyhton",
-//         "c++",
-//         "DSA"
-//     ],
-//     "address": {
-//         "street": "1/24",
-//         "city": "ranikhet",
-//         "pincode": 263645
-//     }
-// }
+const data = {
+    name: "karan",
+    age: 19,
+    isstudent: true,
+    skills: ["java", "python", "c++", "DSA"],
+    address: {
+        street: "1/24",
+        city: "ranikhet",
+        pincode: 263645
+    }
+};
+
+console.log(data.skills[2]); // ✅ Output: c++

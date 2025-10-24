@@ -1,0 +1,11 @@
+{
+  "name": "karan",
+  "age": 19,
+  "isstudent": true,
+  "skills": ["java", "pyhton", "c++", "DSA"],
+  "address": {
+    "street": "1/24",
+    "city": "ranikhet",
+    "pincode": 263645
+  }
+}
