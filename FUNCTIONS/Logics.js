@@ -1,0 +1,8 @@
+// TODO , FORMAL ARGUMENTS --> PARAMETERS WRITTEN INSIDE THE FUNCTION DEFINATION . 
+// TODO , ACTUAL ARGUMENTS --> PARAMETERS PASSED WHEN THE FUNCTION CALL . 
+
+function add(a , b) {
+    console.log(a+b);
+    return a+b ;
+}
+add(5,5);
