@@ -15,7 +15,7 @@ const userdata = {
     username : "karan",
     age : 19,
     printname(){   //? NO NEED TO WRITE THE FUNCTION BEFORE THE FUNCTION NAME BCOZZ OBJECTS ARE KEY-VALUE PAIR & FUNCTION NAME ACT AS KEY AND IT'S DEFINATION ACT AS VALUES .. 
-        console.log(this.username);
+        console.log(this.username);  //! THIS KEYWORD GIVES THE REFERNCE TO THIS SIBLINGS OF THE OBJECT I.E. ALL THE DIRECT OR INDIRECT CHILDS OF OBJECTS CAN BE ACCESSED BY THIS KEYWORD IN THE PLACE OF OBJECT NAME .. 
     }
 }
 console.log(userdata.username);
