@@ -8,11 +8,28 @@ arr = [10 , 20 ,30]
 obj = {
     "name" : "karan",
     "age" : 19,
-    "subjects" : [c , c++ , java , python]
+    "subjects" : ["c" , "c++" , "java" , "python"]
 }
 
 function answer(a, b, c) {
+//TODO , ARRAY TYPECHECKING .. 
+    if (Array.isArray(this.arr)) {
+        console.log("arr IS ARRAY");
+    }
+    else{
+        console.log("NOT AN ARRAY");
+    }
+
+// TODO , OBJECT TYPECHECKING..
+     if (typeof this.obj === "object") {
+        console.log("obj IS AN OBJECT");
+     }
+     else{
+        console.log("NOT AN OBJECT");
+        
+     }
     console.log("ARRAY VALUES :" , this.arr);
     console.log("OBJECT VALUES :" , this.obj);
     
 }
+answer.call({arr , obj} , 1 , 2 , 3)
