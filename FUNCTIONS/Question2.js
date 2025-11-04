@@ -1,3 +1,3 @@
-function showdetails(name , course , ...hobbies) {
+function showdetails(name , ) {
     
 }

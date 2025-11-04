@@ -2,4 +2,4 @@
 
 (function selfinvoking() {
     console.log("RADHE RADHE");
-}());
+})();
