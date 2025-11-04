@@ -1,7 +1,16 @@
-function show(cls , branch , ...hobbies) {
-    console.log("year" , cls);
-    console.log("BRANCH" , branch);
-    console.log("HOBBIES" , hobbies);
+function myfunc(a,b=2,c) {
+    console.log("a =" , a);
+    console.log("b =" , b);
+    console.log("c =" , c);
     
+    if (a=== undefined || b === undefined) {
+        console.log("ERROR");
+    }
+    else{
+        console.log("ALL ARGUMENTS ARE DEFINED & VALID ");
+        
+    }
 }
-show("3rd" , "CSE" , "music" , "horse riding" , "travelling")
+myfunc(5 , "hello" , 10 , 20 , 30)
+myfunc(5)
+myfunc(undefined , 3 , 5)
