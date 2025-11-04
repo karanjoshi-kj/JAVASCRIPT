@@ -1,0 +1,5 @@
+// TODO , THE FUNCTION DID'NT REQIURE EXTERNAL CALLING IS CALLED SELF INVOKING FUNCTION . 
+
+(function selfinvoking() {
+    console.log("RADHE RADHE");
+}());
