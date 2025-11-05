@@ -11,6 +11,8 @@ function myfunc(a,b=2,c) {
         
     }
 }
+
+ 
 myfunc(5 , "hello" , 10 , 20 , 30)
 myfunc(5)
 myfunc(undefined , 3 , 5)
