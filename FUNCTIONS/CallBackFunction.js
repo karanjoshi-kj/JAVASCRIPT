@@ -1,7 +1,7 @@
 // TODO , A CALLBACK FUNCTION IS A CONCEPT WHEN A FUNCTION IS PASSED AS AN ARGUMENT TO THE ANOTHER FUNCTION .
 
 function username() {
-    return "krishna"
+    return "krishna";
 }
 function printhello(name) {
     console.log(name());
