@@ -11,17 +11,17 @@ const printhello = () => {
 printhello();
 
 //? EXAMPLE 2: FUNCTION REFERENCING  
-const add = function addition(a,b) {
-    return a+b;
-}
-console.log("THE ADDITION OF TWO NUMBERS IS:" , add(10,20));
+// const add = function addition(a,b) {
+//     return a+b;
+// }
+// console.log("THE ADDITION OF TWO NUMBERS IS:" , add(10,20));
 
 
 //! NOTE : FATAARROW FUNCTION IS ALWAYS USED FOR SINGLE LINER FUNCTIONS . 
 
 //?EXAMPLE 3:
-const add = (a,b) => a+b;  //? HERE THE a+b WILL ACT AS RETURN STATEMENT . 
-console.log(add(10,10));
+// const add = (a,b) => a+b;  //? HERE THE a+b WILL ACT AS RETURN STATEMENT . 
+// console.log(add(10,10));
 
 //?EXAMPLE 4:
 const add = (a,b) => {
