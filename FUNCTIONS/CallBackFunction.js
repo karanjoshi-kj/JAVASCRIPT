@@ -19,7 +19,7 @@ console.log(
 );
 
 const addlog = function calculate(n1,n2,addition) {
-    return addition (n1,n2)
+    return addition (n1,n2);
 }
 console.log(addlog(5,5,(a,b) => a+b));
 
