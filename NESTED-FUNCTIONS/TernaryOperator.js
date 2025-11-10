@@ -11,3 +11,12 @@ let num = 7;
 let ans = (num % 2 == 0) ? "THE NUMBER IS EVEN" : "THE NUMBER IS ODD";
 console.log(ans);
 
+// !QUESTION 2 : --> MAXIMUM OF TWO NUMBERS 
+
+let a = 15
+let b = 10
+
+
+let maxnum = (a > b ) ? "a IS GREATER" : "b IS GREATER";
+console.log(maxnum);
+
