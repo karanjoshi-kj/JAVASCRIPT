@@ -13,4 +13,5 @@ function checkperfect(num) {
         console.log(num + "is not a perfect number");
     }
 }
+
 checkperfect(28)
