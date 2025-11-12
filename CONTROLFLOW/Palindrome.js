@@ -11,15 +11,18 @@
 //     }
 //     if (num===rev) 
 //         console.log(num);
-// }
+// // }
 
 for(let i=1 ; i<=50 ;i++){
     let rev = 0;
     while (i>0) {
         let digit = i%10   //?LAST DIGIT OF THE NUMBER
         rev = rev *10 + digit  //? REVERSE OF THE NUMBER 
-        i = Math.floor(i/10)  //? REMOVE THE LAST DIGIT 
+        i = Math.floor(i/10)  //? REMOVE THE LAST DIGIT , BECAUSE JS IN DYNAMIC IN NATURE 
+    
+
     }
     if(i === rev)
         console.log(i);
 }
+
