@@ -3,7 +3,7 @@ function checkperfect(num) {
 
     for (let i = 1; i <= num; i++) {
         if (num%i===0)
-            sum+=i
+            sum+=i;
     }
   
     if (sum===num) {
