@@ -1,7 +1,11 @@
-let str = " ";
-
-for(let i = 1 ; i<= 10; i+=2){
-    // if (i<10) 
-        str += (i<10)? `${i} + ${i+1}/${i+2}` : `${i}` 
+n = 20;
+a = ["1"];
+even = 2;
+odd = 3;
+for (i = 1; i < n; i++) {
+  a.push(`+ ${even}/${odd}`);
+  even += 2;
+  odd += 2;
 }
-console.log(str);
+
+console.log(...a);
