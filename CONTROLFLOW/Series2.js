@@ -10,6 +10,8 @@ for (i = 1; i < n; i++) {
 
 console.log(...a);
 
+
+
 //! ONE LINER 
 
 n = 20;
