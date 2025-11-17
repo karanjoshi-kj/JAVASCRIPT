@@ -35,6 +35,17 @@ obj = {
 for (const i of Object.keys(obj)) {  //? THIS WILL PRINT KEY-PAIRS ..  
     console.log(i);
 }
+for (const i of Object.values(obj)) {  //? THIS WILL PRINT VALUE-PAIRS ..  
+    console.log(i);
+}
 
 
 
+//! NOW IF WE WANT TO PRINT BOTH KEY VALUE PAIR TOGETHER THEN THIS IS THE CONCEPT .. 
+
+
+for (const [karan, shubham] of Object.entries(obj)) {
+  console.log(`${karan}: ${shubham}`);
+  console.log();
+  console.log(`${shubham}: ${karan}`);
+}
