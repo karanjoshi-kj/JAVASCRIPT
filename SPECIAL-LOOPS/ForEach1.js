@@ -16,8 +16,9 @@ for (const i of arr) {
 // TODO , FOR-OF -->  DIRECT ITERATION OVER STRING ..
 
 str = "kjkaranjoshi2006@gmail.com"
-for (const i of str) {
-    console.log(i);
+for (const karan of str) {
+    console.log(karan);
     
 }
+
 
