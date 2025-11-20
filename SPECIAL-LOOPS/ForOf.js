@@ -26,11 +26,11 @@
 
 
 // // TODO ,FOR OF LOOP IS NOT DIRECTLY ITERTABLE ON THE OBJECT .. 
-// obj = {
-//     name : "karan",
-//     colleg : "BIAS",
-//     age : 19,
-// };
+obj = {
+    name : "karan",
+    colleg : "BIAS",
+    age : 19,
+};
 
 // for (const i of Object.keys(obj)) {  //? THIS WILL PRINT KEY-PAIRS ..  
 //     console.log(i);
@@ -42,18 +42,18 @@
 
 //! NOW IF WE WANT TO PRINT BOTH KEY VALUE PAIR TOGETHER THEN THIS IS THE CONCEPT .. 
 
-// for (const [karan, shubham] of Object.entries(obj)) {
-//   console.log(`${karan}: ${shubham}`);
-//   console.log();
-//   console.log(`${shubham}: ${karan}`);
-// }
-
-
-
-a1 = [1,2,3,[(1,2,33,[11,12,13,14])]]
-
-for(const key in a1){
-    let pp = a1[3];
-    console.log(pp);
-    
+for (const [karan, shubham] of Object.entries(obj)) {
+  console.log(`${karan}: ${shubham}`);
+  console.log();
+  console.log(`${shubham}: ${karan}`);
 }
+
+
+
+// a1 = [1,2,3,[(1,2,33,[11,12,13,14])]]
+
+// for(const key in a1){
+//     let pp = a1[3];
+//     console.log(pp);
+    
+// }
