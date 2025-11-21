@@ -13,6 +13,7 @@ console.log(a1);
 
 add = 0;
 i = 1;
+
 function sum(val) {
   console.log(`${i++}-->${val}`);
   add += val;
