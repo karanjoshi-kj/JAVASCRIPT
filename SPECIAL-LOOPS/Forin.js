@@ -35,6 +35,7 @@ for (const i in obj) {
   //FOR IN LOOP is direclty iterable over the keys of objects
   console.log(`${i}-->${obj[i]}`); //name-->Karan
 }
+
 // for (const key in a1) {
 //   for (const key1 in a1) {
 //     console.log(key);
