@@ -31,6 +31,8 @@ obj = {
   course: "Btech",
 };
 
+
+
 for (const i in obj) {
   //FOR IN LOOP is direclty iterable over the keys of objects
   console.log(`${i}-->${obj[i]}`); //name-->Karan
