@@ -18,3 +18,12 @@ for (const element of map) {
     console.log(element);  //? THIS WILL PRINT THE COMPLETE MAP VALUES IN THE ARRAY FORM , BUT NOT THE DUPLICATE VALUES . 
 }
 
+
+//! NOW IF I WANT TO PRINT THE VALUES OUTER FROM THE ARRAY -->
+//? WE HAVE TO DECONSTRUCT THE ARRAY . 
+
+for (const [key , value] of map) {
+    console.log(key , "-->" , value);
+    
+}
+
