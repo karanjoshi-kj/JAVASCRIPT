@@ -24,6 +24,9 @@ for (const element of map) {
 
 for (const [key , value] of map) {
     console.log(key , "-->" , value);
-    
 }
+
+//! USING THE FOR OF LOOP IN THE OBJECTS .--> BECAUSE OBJECTS ARE DIRECTLY NOT ITERATABLE 
+
+//? WE DON'T USE FOR OF FOR OBJECTS HERE WE USE FOR IN LOOP . 
 
