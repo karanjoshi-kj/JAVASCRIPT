@@ -30,3 +30,13 @@ for (const [key , value] of map) {
 
 //? WE DON'T USE FOR OF FOR OBJECTS HERE WE USE FOR IN LOOP . 
 
+const myobj = {
+    js : 'javascript',
+    cpp : 'c++',
+    rb : 'ruby',
+    js : 'javascript',
+}
+for (const key in myobj) {
+        console.log(`${key} shortcut is for ${myobj[key]}`);
+}
+
