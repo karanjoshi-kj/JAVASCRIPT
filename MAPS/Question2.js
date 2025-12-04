@@ -1,3 +1,5 @@
+//? WITHOUT ELSE . 
+
 const user = {
     name : "karan",
     email : "kjkaranjoshi2006@gmail.com",
@@ -9,7 +11,9 @@ const {name , email , age} = user;
 
 if (name && email && age) {
     console.log("all data is obtained");
-}
-else{
-    console.log("data is missing ");
+ }
+
+    if (!name || !email || !age) {
+            console.log("data is missing ");
+        
 }
