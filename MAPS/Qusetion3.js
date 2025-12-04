@@ -1,3 +1,5 @@
+//! PASSING OBJECT AS AN ARGUMENT INSIDE THE FUNCTION . 
+
 function checkuserdata(user) {
   const { name, age, email } = user;
 
