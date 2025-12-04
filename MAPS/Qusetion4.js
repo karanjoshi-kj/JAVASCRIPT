@@ -1,7 +1,7 @@
-//! PASSING OBJECT AS AN ARGUMENT INSIDE THE FUNCTION . 
+//? DIRECTLY DESTRUCTURING THE OBJECT IN THE FUNCTION  DEFINATION .. 
 
-function checkuserdata(user) {
-  const { name, age, email, clg} = user;
+
+function checkuserdata({ name, age, email, clg}) {
 
   return(name && email && age && clg) ? 1 : 0
 }
@@ -13,6 +13,3 @@ const user = {
   clg : "",
 };
 console.log(checkuserdata(user)); // 0
-
-
-
