@@ -13,3 +13,6 @@ const user = {
   clg : "",
 };
 console.log(checkuserdata(user)); // 0
+
+
+ 
