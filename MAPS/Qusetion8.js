@@ -1,4 +1,4 @@
-// ! TYPECHECKING 
+// !    TYPECHECKING 
 
 const usercheck = ({name , age , email}) =>
 
@@ -9,5 +9,6 @@ const user = {
   email: "kjkaranjoshi2006@gmail.com",
   age: 19,
 };
+
 
 console.log(usercheck(user));
