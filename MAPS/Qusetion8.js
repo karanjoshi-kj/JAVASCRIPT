@@ -10,5 +10,5 @@ const user = {
   age: 19,
 };
 
-
+3
 console.log(usercheck(user));
