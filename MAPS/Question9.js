@@ -12,6 +12,8 @@
 // console.log(generateotp(5));
 
 
+
+
 //? USING WHILE LOOP .  
 
 
