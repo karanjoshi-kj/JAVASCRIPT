@@ -12,7 +12,9 @@
 // console.log(generateotp(5));
 
 
-//? USING WHILE LOOP . 
+//? USING WHILE LOOP .  
+
+
 
 const generateotp = (length) => {
     let otp = " ";
