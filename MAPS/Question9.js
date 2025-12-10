@@ -13,7 +13,8 @@
 
 
 
-//? USING WHILE LOOP ..
+//? USING WHILE LOOP ...
+
 
 
 const generateotp = (length) => {
