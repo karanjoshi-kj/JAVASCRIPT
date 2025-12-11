@@ -15,6 +15,7 @@
 
 //? USING WHILE LOOP ...
 
+
 const generateotp = (length) => {
     let otp = " ";
     let i = 0;
