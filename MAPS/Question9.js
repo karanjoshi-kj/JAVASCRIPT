@@ -9,8 +9,7 @@
 //     return otp;
 // }
 // console.log(generateotp(4));
-// console.log(generateotp(5));
-
+// console.log(generateotp(5));git 
 
 
 //? USING WHILE LOOP ...
