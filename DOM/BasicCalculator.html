@@ -9,10 +9,10 @@
     <h1 id="calci">Calculator</h1>
 
     Enter Number 1 :
-    <input type="number" id="input1" /><br />
+    <input type="text" id="input1" /><br />
 
     Enter Number 2 :
-    <input type="number" id="input2" /><br />
+    <input type="text" id="input2" /><br />
 
     <button onclick="Calculate('add')">ADD</button>
     <button onclick="Calculate('sub')">SUB</button>
@@ -28,21 +28,24 @@
 
         let result = "";
 
-        if (operation === "add") {
-          result = "Addition :" + (num1 + num2);
-          console.log(result);
-        } else if (operation === "mul") {
-          result = "Multiplication :" + num1 * num2;
-          console.log(result);
-        } else if (operation === "sub") {
-          result = "Subtraction :" + (num1 - num2);
-          console.log(result);
-        } else if (operation === "div") {
-          result = "Division :" + num1 / num2;
-        } else {
-          console.log("PLZZ ENTER THE VALID INPUT");
+        if (!num1 || !num2) return OUTPUT.innerHTML = "ERROR";
+        else {
+          if (operation === "add") {
+            result = "Addition :" + (num1 + num2);
+            console.log(result);
+          } else if (operation === "mul") {
+            result = "Multiplication :" + num1 * num2;
+            console.log(result);
+          } else if (operation === "sub") {
+            result = "Subtraction :" + (num1 - num2);
+            console.log(result);
+          } else if (operation === "div") {
+            result = "Division :" + num1 / num2;
+          } else {
+            console.log("PLZZ ENTER THE VALID INPUT");
+          }
+          document.getElementById("OUTPUT").innerHTML = result;
         }
-        document.getElementById("OUTPUT").innerHTML = result;
       }
     </script>
   </body>
