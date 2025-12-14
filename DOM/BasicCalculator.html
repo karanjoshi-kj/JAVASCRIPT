@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calculator</title>
-    <img src="sc.png" alt="screenshot">
   </head>
   <body>
     <h1 id="calci">Calculator</h1>
@@ -20,25 +19,30 @@
     <button onclick="Calculate('mul')">MUL</button>
     <button onclick="Calculate('div')">DIV</button>
 
+    <p id="OUTPUT"></p>
     <script>
       function Calculate(operation) {
-        const num1 = document.getElementById("input1").value;
-        const num2 = document.getElementById("input2").value;
+        console.log(operation);
+        const num1 = Number(document.getElementById("input1").value);
+        const num2 = Number(document.getElementById("input2").value);
+
         let result = "";
 
-        if (operation === "add"){ 
-        result = "Addition :" + (num1 + num2);
+        if (operation === "add") {
+          result = "Addition :" + (num1 + num2);
+          console.log(result);
+        } else if (operation === "mul") {
+          result = "Multiplication :" + num1 * num2;
+          console.log(result);
+        } else if (operation === "sub") {
+          result = "Subtraction :" + (num1 - num2);
+          console.log(result);
+        } else if (operation === "div") {
+          result = "Division :" + num1 / num2;
+        } else {
+          console.log("PLZZ ENTER THE VALID INPUT");
         }
-        else if (operation === "mul"){ 
-        result = "Multiplication :" + num1 * num2;
-        }
-        else if (operation === "sub"){ 
-        result = "Subtraction :" + (num1 - num2);
-        }
-        else operation === "div";{
-        result = "Division :" + num1 / num2;
-        }
-        document.getElementById("OUTPUT").innerText = result;
+        document.getElementById("OUTPUT").innerHTML = result;
       }
     </script>
   </body>
