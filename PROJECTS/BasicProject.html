@@ -1,55 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BASIC CALCULATOR</title>
-</head>
-<body>
+  </head>
+
+  <body>
     <div class="calculator">
-        <input type="text" id="display">
+      <input type="text" id="display" />
 
-        <div class="Buttons">
-            <button onclick="cleardisplay()" class="clear">C</button>
-            <button onclick="append('%')">%</button>
-            <button onclick="append('/')">/</button>
-            <button onclick="append('*')">*</button>
+      <div class="Buttons">
+        <button onclick="cleardisplay()">C</button>
+        <button onclick="append('%')">%</button>
+        <button onclick="append('/')">/</button>
+        <button onclick="append('*')">*</button>
 
+        <button onclick="append('7')">7</button>
+        <button onclick="append('8')">8</button>
+        <button onclick="append('9')">9</button>
+        <button onclick="append('-')">-</button>
 
-            <button onclick="append('7')">7</button>
-            <button onclick="append('8')">8</button>
-            <button onclick="append('9')">9</button>
-            <button onclick="append('-')">-</button>
+        <button onclick="append('4')">4</button>
+        <button onclick="append('5')">5</button>
+        <button onclick="append('6')">6</button>
+        <button onclick="append('+')">+</button>
 
-            <button onclick="append('4')">4</button>
-            <button onclick="append('5')">5</button>
-            <button onclick="append('6')">6</button>
-            <button onclick="append('+')">+</button>
+        <button onclick="append('1')">1</button>
+        <button onclick="append('2')">2</button>
+        <button onclick="append('3')">3</button>
+        <button onclick="append('.')">.</button>
 
-            <button onclick="append('1')">1</button>
-            <button onclick="append('2')">2</button>
-            <button onclick="append('3')">3</button>
-            <button onclick="append('.')">.</button>
-
-            <button onclick="append('0')">0</button>
-            <button onclick="" class="equal">=</button>
-        </div>
+        <button onclick="append('0')">0</button>
+        <button onclick="calculate()">=</button>
+      </div>
     </div>
 
     <script>
-        let display1 = document.getElementById("display").value;
+      let display = document.getElementById("display");
 
-        function append(value){
-            display.value += value
+      function append(value) {
+        display.value += value;
+      }
+
+      function cleardisplay() {
+        display.value = "";
+      }
+
+      function calculate() {
+        let s = display.value;
+        let a = "",
+         b = "",
+        op = "",
+          f = 0;
+
+        for (let c of s) {
+          if ((c >= "0" && c <= "9") || c == ".") {
+            f ? (b += c) : (a += c);
+          } else {
+            op = c;
+            f = 1;
+          }
         }
 
-        function cleardisplay(){
-            display.value = "";
-        }
-      
-        
+        a = +a;   
+        b = +b;
 
-
+        display.value =
+          op == "+"
+            ? a + b
+            : op == "-"
+            ? a - b
+            : op == "*"
+            ? a * b
+            : op == "/"
+            ? a / b
+            : op == "%"
+            ? a % b
+            : "Error";
+      }
     </script>
-</body>
+  </body>
 </html>
