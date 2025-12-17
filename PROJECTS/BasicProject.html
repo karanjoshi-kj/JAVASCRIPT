@@ -7,10 +7,10 @@
 </head>
 <body>
     <div class="calculator">
-        <input type="text" id="display" disabled>
+        <input type="text" id="display">
 
         <div class="Buttons">
-            <button onclick="" class="clear">C</button>
+            <button onclick="cleardisplay()" class="clear">C</button>
             <button onclick="append('%')">%</button>
             <button onclick="append('/')">/</button>
             <button onclick="append('*')">*</button>
@@ -37,7 +37,7 @@
     </div>
 
     <script>
-        let display = display.getElementById("display")
+        let display1 = document.getElementById("display").value;
 
         function append(value){
             display.value += value
@@ -46,14 +46,8 @@
         function cleardisplay(){
             display.value = "";
         }
-        function calculate(){
-            try{
-                display.value = eval(display.value)
-            }
-            catch{
-                display.value = "ERROR"
-            }
-        }
+      
+        
 
 
     </script>
