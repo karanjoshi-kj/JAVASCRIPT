@@ -12,6 +12,7 @@ body {
 .calci{
     position: absolute;
     padding-bottom: 35vmax;
+    font-size: 3vmax;
 }
 
 .calculator {
