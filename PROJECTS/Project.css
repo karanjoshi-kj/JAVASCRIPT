@@ -9,6 +9,11 @@ body {
   font-family: Arial, sans-serif;
 }
 
+.calci{
+    position: absolute;
+    padding-bottom: 35vmax;
+}
+
 .calculator {
   background: #222;
   padding: 20px;
@@ -52,11 +57,12 @@ button:hover {
   background: #555;
 }
 
-button:active {
-  transform: scale(0.95);
-}
+    button:active {
+    transform: scale(0.95);
+    }
 
 /* Operators */
+
 button:nth-child(2),
 button:nth-child(3),
 button:nth-child(4),
