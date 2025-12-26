@@ -6,15 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+    <input type="text" id="fruitinput" placeholder="Enter Fruit Name">
+    <button onclick="getvalue()">ADD</button>
     <ul  id="fruitlist"></ul>
     <script>
         function addelementtolist(fruitname){
             const li = document.createElement("li")
-            li.innerHTML = '${fruitname}';
+            li.innerHTML = `${fruitname}`;
             document.getElementById("fruitlist").appendChild(li)
         }
-        addelementtolist("apple")
-        addelementtolist("mango")
+        
+        function getvalue(){
+        addelementtolist(document.getElementById('fruitinput').value)
+        }
     </script>
 </body>
 </html>
