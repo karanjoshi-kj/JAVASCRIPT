@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <ul  id="fruitlist"></ul>
+    <script>
+        function addelementtolist(fruitname){
+            const li = document.createElement("li")
+            li.innerHTML = '${fruitname}';
+            document.getElementById("fruitlist").appendChild(li)
+        }
+        addelementtolist("apple")
+        addelementtolist("mango")
+    </script>
+</body>
+</html>
