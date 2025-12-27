@@ -2,23 +2,41 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=, initial-scale=1.0">
-    <title>Document</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fruit List</title>
 </head>
 <body>
+
+    <h1>FRUIT LIST</h1>
     <input type="text" id="fruitinput" placeholder="Enter Fruit Name">
     <button onclick="getvalue()">ADD</button>
-    <ul  id="fruitlist"></ul>
+
+    <ul id="fruitlist"></ul>
+
     <script>
         function addelementtolist(fruitname){
-            const li = document.createElement("li")
-            li.innerHTML = `${fruitname}`;
-            document.getElementById("fruitlist").appendChild(li)
+            const li = document.createElement("li");
+            li.innerHTML = fruitname;
+            document.getElementById("fruitlist").appendChild(li);
         }
         
         function getvalue(){
-        addelementtolist(document.getElementById('fruitinput').value)
+            const value = document.getElementById('fruitinput').value;
+
+            if(value === ""){
+                alert("ERROR: Input cannot be blank");
+                return;
+            }
+
+            if(!isNaN(value)){
+                alert("STRING CANNOT BE A NUMBER");
+                return;
+            }
+
+            addelementtolist(value);
+            document.getElementById('fruitinput').value = "";
         }
     </script>
+
 </body>
 </html>
