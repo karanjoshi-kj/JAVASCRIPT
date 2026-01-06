@@ -30,6 +30,7 @@
 </head>
 <body>
 
+  <button onclick="openpopup()">VIEW</button>
  
     <div class="box" id="popup">
       <button class="close-btn" onclick="closepopup()">CLOSE</button>
@@ -37,6 +38,10 @@
     </div>
 
     <script>
+
+      function openpopup(){
+        document.getElementById("popup").style.display = "block"
+      }
       function closepopup(){
         document.getElementById("popup").style.display = "none"
       }
