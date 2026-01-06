@@ -1,50 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POPUP</title>
+  <meta charset="UTF-8">
+  <title>Creative Popup</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
   <style>
     body {
-      margin: 0;
-      height: 100vh;
-      
-      display: flex;
-      align-items: center;
-      justify-content: center;
+  margin: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  background:
+    radial-gradient(circle at top left, #ffd1dc, transparent 40%),
+    radial-gradient(circle at bottom right, #ffe6f0, transparent 40%),
+    #ffffff;
+
+  font-family: 'Segoe UI', sans-serif;
+}
+
+
+
+    .view-btn {
+      padding: 15px 35px;
+      font-size: 18px;
+      border: none;
+      border-radius: 30px;
+      background: #ff6f91;
+      color: white;
+      cursor: pointer;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
     }
 
-    .box {
-      width: 300px;
-      height: 150px;
-      border: 2px solid black;
+    .view-btn:hover {
+      background: #ff4f7a;
+    }
 
+    .overlay {
+      position: fixed;
+      inset: 0;
+      background: rgba(0,0,0,0.4);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .popup {
+      width: 360px;
+      background: linear-gradient(180deg, #fff0f6, #ffffff);
+      border-radius: 20px;
+      padding: 30px;
       text-align: center;
-      line-height: 150px;
-      font-size: 20px;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+      animation: pop 0.5s ease;
+    }
+
+    @keyframes pop {
+      from {
+        transform: scale(0.6);
+        opacity: 0;
+      }
+      to {
+        transform: scale(1);
+        opacity: 1;
+      }
+    }
+
+    .panda {
+      font-size: 70px;
+      margin-bottom: 10px;
+      animation: wave 1s infinite alternate;
+    }
+
+    @keyframes wave {
+      from { transform: rotate(-5deg); }
+      to { transform: rotate(5deg); }
+    }
+
+    .popup h2 {
+      margin: 10px 0;
+      color: #333;
+    }
+
+    .popup p {
+      color: #666;
+      font-size: 15px;
+    }
+
+    .close-btn {
+      margin-top: 20px;
+      padding: 12px 30px;
+      border: none;
+      border-radius: 25px;
+      background: #ff6f91;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+    }
+
+    .close-btn i {
+      margin-right: 6px;
+    }
+
+    .close-btn:hover {
+      background: #ff4f7a;
     }
   </style>
 </head>
 <body>
 
-  <button onclick="openpopup()">VIEW</button>
- 
-    <div class="box" id="popup">
-      <button class="close-btn" onclick="closepopup()">CLOSE</button>
-        center m dibba 
+  <button class="view-btn" onclick="openpopup()">
+    <i class="fa-solid fa-eye"></i> VIEW
+  </button>
+
+  <div class="overlay" id="overlay">
+    <div class="popup">
+      <div class="panda">🐼</div>
+      <h2>Welcome!</h2>
+      <p>thanks for visiting my site</p>
+
+      <button class="close-btn" onclick="closepopup()">
+        <i class="fa-solid fa-heart"></i> CLOSE
+      </button>
     </div>
+  </div>
 
-    <script>
+  <script>
+    function openpopup() {
+      document.getElementById("overlay").style.display = "flex";
+    }
 
-      function openpopup(){
-        document.getElementById("popup").style.display = "block"
-      }
-      function closepopup(){
-        document.getElementById("popup").style.display = "none"
-      }
-    </script>
+    function closepopup() {
+      document.getElementById("overlay").style.display = "none";
+    }
+  </script>
+
 </body>
 </html>
