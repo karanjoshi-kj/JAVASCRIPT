@@ -9,42 +9,25 @@
 
   <style>
     body {
-  margin: 0;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
 
-  background:
-    radial-gradient(circle at top left, #ffd1dc, transparent 40%),
-    radial-gradient(circle at bottom right, #ffe6f0, transparent 40%),
-    #ffffff;
+      background:
+        radial-gradient(circle at top left, #ffd1dc, transparent 40%),
+        radial-gradient(circle at bottom right, #ffe6f0, transparent 40%),
+        #ffffff;
 
-  font-family: 'Segoe UI', sans-serif;
-}
-
-
-
-    .view-btn {
-      padding: 15px 35px;
-      font-size: 18px;
-      border: none;
-      border-radius: 30px;
-      background: #ff6f91;
-      color: white;
-      cursor: pointer;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.2);
-    }
-
-    .view-btn:hover {
-      background: #ff4f7a;
+      font-family: 'Segoe UI', sans-serif;
     }
 
     .overlay {
       position: fixed;
       inset: 0;
       background: rgba(0,0,0,0.4);
-      display: none;
+      display: flex;
       justify-content: center;
       align-items: center;
     }
@@ -113,18 +96,11 @@
 </head>
 <body>
 
-  
-  
-  <button class="view-btn" onclick="openpopup()">
-    <i class="fa-solid fa-eye"></i> VIEW
-  </button>
-
-
   <div class="overlay" id="overlay">
     <div class="popup">
       <div class="panda">🐼</div>
       <h2>Welcome!</h2>
-      <p>thanks for visiting my site</p>
+      <p>Thanks for visiting my site 💖</p>
 
       <button class="close-btn" onclick="closepopup()">
         <i class="fa-solid fa-heart"></i> CLOSE
@@ -133,10 +109,6 @@
   </div>
 
   <script>
-    function openpopup() {
-      document.getElementById("overlay").style.display = "flex";
-    }
-
     function closepopup() {
       document.getElementById("overlay").style.display = "none";
     }
