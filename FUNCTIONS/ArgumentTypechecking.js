@@ -5,7 +5,6 @@ obj = {
 }
 obj1 = 10;
 b = 20;
-
 function printval(o,S) {
     console.log(typeof o);
     if (typeof o === "object") {
