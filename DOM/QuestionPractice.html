@@ -13,13 +13,14 @@
 
     <ul id="fruitlist"></ul>
     
+    
     <script>
         function addelementtolist(fruitname){
             const li = document.createElement("li");
             li.innerHTML = fruitname;
             document.getElementById("fruitlist").appendChild(li);
         }
-        
+
         
         function getvalue(){
             const value = document.getElementById('fruitinput').value;
