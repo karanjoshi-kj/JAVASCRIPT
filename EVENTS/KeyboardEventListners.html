@@ -8,12 +8,12 @@
   <body>
     <p>hello</p>
     <script>
-      
+        
        
-        document.addEventListener("keypress",()=>{
-            alert("KEY PRESSED");
+        <!-- IF WE WANT TO CHECK THAT WHICH KEY HAS BEEN PRESSED , THEN -->
+        document.addEventListener("keydown",(e)=>{
+            alert(`IDENTIFY WHICH HAS BEEN PRESSED , ${e.key}`);
         })
-       
     </script>
   </body>
 </html>
