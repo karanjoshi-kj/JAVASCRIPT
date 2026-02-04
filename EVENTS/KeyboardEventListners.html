@@ -8,12 +8,27 @@
   <body>
     <p>hello</p>
     <script>
-        
-       
+        document.addEventListener("keydown",()=>{
+            alert("KEY DOWN");
+        }) 
+        document.addEventListener("keyup",()=>{
+            alert("KEY UP");
+        })
+        document.addEventListener("keypress",()=>{
+            alert("KEY PRESS");
+        })
+
         <!-- IF WE WANT TO CHECK THAT WHICH KEY HAS BEEN PRESSED , THEN -->
         document.addEventListener("keydown",(e)=>{
             alert(`IDENTIFY WHICH HAS BEEN PRESSED , ${e.key}`);
         })
+        
+        // IT WILL ALSO TELL THAT KEY IS PRESSED FORM WHERE
+        document.addEventListener("keydown",(e)=>{
+            alert(`IDENTIFY WHICH HAS BEEN PRESSED , ${e.code}`);
+        })
+
+
     </script>
   </body>
 </html>
