@@ -28,7 +28,14 @@
             alert(`IDENTIFY WHICH HAS BEEN PRESSED , ${e.code}`);
         })
 
-
+        document.addEventListener("keydown",(e)=>{
+            if(e.key==="Enter"){
+                alert("Enter Key is preesed")
+            }
+            else{
+                alert("invalid")
+            }
+        })
     </script>
   </body>
 </html>
