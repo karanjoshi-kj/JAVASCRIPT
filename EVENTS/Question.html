@@ -5,11 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <li>image1</li>
-    <li>image2</li>
-    <li>image3</li>
-    <li>image4</li>
-    <li>image5</li>
+<ul>
+    <li onclick="removeimag(this)">image1</li>
+    <li onclick="removeimag(this)">image2</li>
+    <li onclick="removeimag(this)">image3</li>
+    <li onclick="removeimag(this)">image4</li>
+    <li onclick="removeimag(this)">image5</li>
+</ul>
 </body>
+<script>
+    
+    function removeimage(e){
+        e.remove();
+    }
+</script>
+<body>
 </html>
