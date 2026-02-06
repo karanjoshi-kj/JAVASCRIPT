@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #ulid {
+        border: 4px solid green;
+      }
+    </style>
+  </head>
+  <body>
+    <ul id="ulid">
+      <li id="img1">image1</li>
+      <li id="img2">image2</li>
+      <li id="img3">image3</li>
+      <li id="img4">image4</li>
+      <li id="img5">image5</li>
+    </ul>
+    <script>
+      document.getElementById("ulid").addEventListener("click", (e) => {
+        console.log("Click on Ul ");
+        e.stopPropagation();
+      });
+      //   propation ko stop krne ke liye hm log yha par ik para  pass krte h jisse kya ki bubbling stop hogi
+      document.getElementById("img3").addEventListener("click", () => {
+        console.log("Click on Li Img 3");
+        // e.stopPropagation();
+        // progation property // bubbling
+      });
+    </script>
+  </body>
+</html>
