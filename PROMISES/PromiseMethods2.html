@@ -16,13 +16,13 @@
       const getpromise = () => {
         return new Promise((resolve, reject) => {
           console.log("HI EVERYONE");
-          reject("error");
+          reject("syntax error");
         });
       };
 
       let promise = getpromise();
-      promise.catch(() => {
-        console.log("ERROR OCCURED");
+      promise.catch((err) => {  // THERE IS A PARAMETER OF CATCH WHICH IS USED TO PRINT THE ERROR MESSAGE .  
+        console.log("ERROR OCCURED" , err);
       });
     </script>
   </body>
