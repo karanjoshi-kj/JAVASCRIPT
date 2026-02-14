@@ -7,7 +7,10 @@
 </head>
 <body>
     <script>
-        
+        let promise = new Promise((resolve , reject) => {
+            console.log("HEY!! , IT'S A PROMISE");
+            reject("error occured");     // THIS WILL GO TO THE REJECTED STATE AND THE RESULT IS ERROR OCCURED .
+        })
     </script>
 </body>
 </html>
