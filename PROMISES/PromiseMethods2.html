@@ -1,0 +1,29 @@
+ <!--!  THERE ARE TWO TYPES OF METHODS IN THE PROMISES ==> -->
+ <!--? 1. .then() : USED AFTERTHE CONDITON IS FULLFILLED .  -->
+ <!--? 2. .catch() : USED AFTER THE CONDITION IS REJECTED . -->
+
+
+ <!--TODO , WHEN ERROR OCCURED IN THE CONDITION .  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROMISE METHODS</title>
+  </head>
+  <body>
+    <script>
+      const getpromise = () => {
+        return new Promise((resolve, reject) => {
+          console.log("HI EVERYONE");
+          reject("error");
+        });
+      };
+
+      let promise = getpromise();
+      promise.catch(() => {
+        console.log("ERROR OCCURED");
+      });
+    </script>
+  </body>
+</html>
