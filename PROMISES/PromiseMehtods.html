@@ -1,3 +1,29 @@
-<!--!   THERE ARE TWO TYPES OF METHODS IN THE PROMISES-->
-<!--?  1.  .then()  : USED AFTER THE CONDITON IS FULLFILLED .  -->
-<!--?  2.  .catch() : USED AFTER THE CONDITION IS REJECTED . -->
+ <!--!  THERE ARE TWO TYPES OF METHODS IN THE PROMISES ==> -->
+ <!--? 1. .then() : USED AFTERTHE CONDITON IS FULLFILLED .  -->
+ <!--? 2. .catch() : USED AFTER THE CONDITION IS REJECTED . -->
+
+
+ <!--TODO , WHEN THE CONDITION IS FULLFILLED .  -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROMISE METHODS</title>
+  </head>
+  <body>
+    <script>
+      const getpromise = () => {
+        return new Promise((resolve, reject) => {
+          console.log("RADHE RADHE");
+          resolve("success");
+        });
+      };
+
+      let promise = getpromise();
+      promise.then(() => {
+        console.log("promise fullfilled");
+      });
+    </script>
+  </body>
+</html>
