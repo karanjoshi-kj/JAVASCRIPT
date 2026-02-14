@@ -7,10 +7,21 @@
 </head>
 <body>
     <script>
-        let promise = new Promise((resolve , reject) => {
-            console.log("HEY!! , IT'S A PROMISE");
-            reject("error occured");     // THIS WILL GO TO THE REJECTED STATE AND THE RESULT IS ERROR OCCURED .
-        })
+        <!--! THIS IS METHOD ONE WHEN WE CREATE THE PROMISE BY OURSELF .  -->
+        //let promise = new Promise((resolve , reject) => {
+          //  console.log("HEY!! , IT'S A PROMISE");
+            //reject("error occured");     // THIS WILL GO TO THE REJECTED STATE AND THE RESULT IS ERROR OCCURED .
+        //})
+        
+        // THIS IS METHOD TWO WHEN THE PROMISE IS RETURNED BY THE API .
+        function getdata(getID , nextdata){
+            return new Promise((resolve , reject) => {
+                reject("ERROR");
+                if(nextdata){
+                    nextdata();
+                }
+            },5000);
+        }
     </script>
 </body>
 </html>
