@@ -1,27 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROMISES</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        <!--! THIS IS METHOD ONE WHEN WE CREATE THE PROMISE BY OURSELF .  -->
-        //let promise = new Promise((resolve , reject) => {
-          //  console.log("HEY!! , IT'S A PROMISE");
-            //reject("error occured");     // THIS WILL GO TO THE REJECTED STATE AND THE RESULT IS ERROR OCCURED .
-        //})
-        
-        // THIS IS METHOD TWO WHEN THE PROMISE IS RETURNED BY THE API .
-        function getdata(getID , nextdata){
-            return new Promise((resolve , reject) => {
-                reject("ERROR");
-                if(nextdata){
-                    nextdata();
-                }
-            },5000);
-        }
+      <!--! THIS IS METHOD ONE WHEN WE CREATE THE PROMISE BY OURSELF .  -->
+      //let promise = new Promise((resolve , reject) => {
+      //  console.log("HEY!! , IT'S A PROMISE");
+      //reject("error occured");     // THIS WILL GO TO THE REJECTED STATE AND THE RESULT IS ERROR OCCURED .
+      //})
+
+      // THIS IS METHOD TWO WHEN THE PROMISE IS RETURNED BY THE API .
+      function getdata(getID, nextdata) {
+        return new Promise((resolve, reject) => {
+          reject("ERROR");
+          if (nextdata) {
+            nextdata();
+          }
+        }, 5000);
+      }
     </script>
-</body>
+  </body>
 </html>
