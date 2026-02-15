@@ -6,6 +6,18 @@
     <title>PROMISES</title>
 </head>
 <body>
-    
+    <script>
+        let promises = new Promise(function(resolve , reject){
+            let a = 2 ;
+            let b = 2 ;
+            let result = a+b;
+
+            resolve(result);
+
+            promises.then(function(answer){
+                console.log("result is :" , answer);
+            }).catch
+        })
+    </script>
 </body>
 </html>
