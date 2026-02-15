@@ -1,25 +1,27 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>PROMISES</title>
-</head>
-<body>
+  </head>
+  <body>
     <script>
-        let promises = new Promise(function(resolve , reject){
-            let a = 2 ;
-            let b = 2 ;
-            let result = a+b;
+      let promises = new Promise(function (resolve, reject) {
+        let a = 2;
+        let b = 2;
+        let result = a + b;
 
-            resolve(result);
+        resolve(result);
+      });
+
+      promises
+        .then(function (answer) {
+          console.log("result is :", answer);
+        })
+        .catch(function (error) {
+          console.log("ERROR", error);
         });
-
-            promises.then(function(answer){
-                console.log("result is :" , answer);
-            }).catch(function(error){
-                console.log("ERROR" , error);
-            });
     </script>
-</body>
+  </body>
 </html>
