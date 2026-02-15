@@ -13,11 +13,13 @@
             let result = a+b;
 
             resolve(result);
+        });
 
             promises.then(function(answer){
                 console.log("result is :" , answer);
-            }).catch
-        })
+            }).catch(function(error){
+                console.log("ERROR" , error);
+            });
     </script>
 </body>
 </html>
