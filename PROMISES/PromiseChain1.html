@@ -1,0 +1,41 @@
+<!--? PROPER EXAMPLE OF PROMISE CHAINING ....  -->
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PROMISE CHAIN</title>
+  </head>
+  <body>
+    <script>
+      function async1() {
+        return new Promise((resolve, reject) => {
+          setTimeout(() => {
+            console.log("DATA 1");
+            resolve("SUCCESS");
+          }, 4000);
+        });
+      }
+
+      
+      function async2() {
+          return new Promise((resolve, reject) => {
+              setTimeout(() => {
+                  console.log("DATA 2");
+                  resolve("SUCCESS");
+                }, 4000);
+            });
+        }
+        
+        
+        console.log("FETCHING DATA 1 ....");
+        let p1 = async1();
+        p1.then((res) => {
+            console.log("FETCHING DATA 2 ...");
+            let p2 = async2();
+            p2.then((res) => {});
+        });
+    </script>
+  </body>
+</html>
