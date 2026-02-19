@@ -25,13 +25,10 @@
                 }, 4000);
             });
         }
-
         console.log("FETCHING DATA 1 ....");
-        let p1 = async1();
-        p1.then((res) => {
+        async1().then((res) => {
             console.log("FETCHING DATA 2 ...");
-            let p2 = async2();
-            p2.then((res) => {});
+         async2().then((res) => {});
         });
     </script>
   </body>
