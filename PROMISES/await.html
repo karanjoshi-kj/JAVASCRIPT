@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function getdata() {
+        return new Promise((resolve, rejcet) => {
+          setTimeout(() => {
+            resolve("DATA MIL GYA H");
+          }, 2000);
+        });
+      }
+      async function fetchdata(){
+        console.log("DATA AA RAHA HAI ....");
+
+        let result = await getdata();
+
+        console.log(result);
+        console.log("KAAM KHATHAM")
+      }
+      fetchdata();
+    </script>
+  </body>
+</html>
