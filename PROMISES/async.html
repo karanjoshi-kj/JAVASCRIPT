@@ -12,7 +12,15 @@
 </head>
 <body>
     <script>
-        
+        async function greet(){
+            <!--! NORMALLY ASYCN METHOD WORKS AS THE SYNCHRONOUS METHOD , TO WORK IT LIKE THE ASYCN FUNCTION IT USES AWAIT METHOD .  -->
+            console.log("HELLO SIR !!");
+            setTimeout(()=>{
+                console.log("ASYNCH METHOD");
+            } , 2000);
+            console.log("OUTSIDE THE SETTIMIEOUT METHOD");
+        }
+        greet();
     </script>
 </body>
 </html>
