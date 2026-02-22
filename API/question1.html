@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        async function getdata(){
+            try{
+                const api = await fetch("https://dummyjson.com/products");
+                const data = await api.json();
+                console.log("PRODUCTS DATA : " , data.products);
+            }
+            catch(e){
+                console.log("ERROR :" , e)
+            }
+        }
+        getdata();
+    </script>
+</body>
+</html>
