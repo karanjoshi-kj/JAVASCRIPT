@@ -17,11 +17,10 @@
                 const data = await api.json();
                 const products = data.products;
                 const box = document.getElementById("box");
-<!--! LINE 19 KA LOGIC : -->
 // SAASE PAHLE RIGHT SIDE M DOCUMEMT M JAYEGA JISKA ID BOX HAI US ELEMENT KO MUJHE DE DEDO FRR AB BAAT AAYI LEFT SIDE KI YE USS HTML KO EK VARIABLE M STORE KAR DEGA AB BOX KE ANDAR LINE NUMBER 9 PURA AA GYA . 
-                box.innerHTML = products.map(p=>{
-                    return `<p>{product.title}</p>`
-                }).join("");
+                box.innerHTML = products.map(p =>
+                     `<p>${p.title}</p>`
+                ).join("");
 
             }
             catch(e){
