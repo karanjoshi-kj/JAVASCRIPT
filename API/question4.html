@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    #user {
+      background-color: rgb(241, 180, 153);
+      height: 10vmax;
+      width: 18vmax;
+      border-radius: 10px;
+      border: 2px solid black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+  </style>
+  <body>
+    <div id="allData"></div>
+    <script>
+      const box = document.getElementById("allData");
+      async function getdata() {
+        try {
+          const api = await fetch("https://jsonplaceholder.typicode.com/users");
+          const data = await api.json();
+          box.innerHTML = data
+            .map(
+              (user) => `<div id="user">
+        <h3>Username: ${user.name}</h2>
+        <h2>Phone${user.phone}</h3>
+        <p>Email: ${user.email}</p>
+        <p>Adress: ${user.address.city}</p>
+      </div>`,
+            )
+            .join("");
+        } catch (e) {
+          console.log("ERROR :", e);
+        }
+      }
+      getdata();
+    </script>
+  </body>
+</html>
