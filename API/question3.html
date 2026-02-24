@@ -17,7 +17,6 @@
                 const data = await api.json();
                 const products = data.products;
                 const box = document.getElementById("box");
-                
                 box.innerHTML = products.map(p =>
                      `<p>${p.title}</p>`
                 ).join("");
