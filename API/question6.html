@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>User Cards</title>
+
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: #f4f6f9;
+      margin: 0;
+      padding: 20px;
+    }
+
+    #alldata {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: 0.3s ease;
+    }
+
+    .card:hover {
+      transform: translateY(-5px);
+    }
+
+    .card h3 {
+      margin: 0 0 10px 0;
+      color: #333;
+    }
+
+    .card p {
+      margin: 5px 0;
+      color: #555;
+      font-size: 14px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="alldata"></div>
+
+  <script>
+    const container = document.getElementById("alldata");
+
+    async function getdata() {
+      try {
+        const api = await fetch(
+          "https://fakestoreapiserver.reactbd.org/api/users"
+        );
+
+        const userdata = await api.json();
+
+        container.innerHTML = userdata.data.map(user => {
+          return `
+            <div class="card">
+              <h3>${user.name}</h3>
+              <p><strong>Email:</strong> ${user.email}</p>
+              <p><strong>Phone:</strong> ${user.phone}</p>
+              <p><strong>Username:</strong> ${user.username}</p>
+            </div>
+          `;
+        }).join("");
+
+      } catch (e) {
+        console.log("ERROR : ", e);
+      }
+    }
+
+    getdata();
+  </script>
+
+</body>
+</html>
