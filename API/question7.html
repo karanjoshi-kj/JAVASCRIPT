@@ -1,1 +1,26 @@
 <!--! FETCH THE DATA OF THIS API -->  "https://fakestoreapiserver.reactbd.org/api/amazonproducts" AND SHOW THE RESULT IN THE SCREEN IN THE PROPER CARD FORMAT .  -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div class="alldata"></div>
+    <script>
+        async function getdata(){
+            try{
+                const api = await fetch("https://fakestoreapiserver.reactbd.org/api/amazonproducts");
+                const userdata = api.json();
+                console.log(userdata);
+            }
+            catch(e){
+                console.log("ERROR");
+            }
+        }
+        getdata();
+    </script>
+</body>
+</html>
