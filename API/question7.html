@@ -1,26 +1,41 @@
-<!--! FETCH THE DATA OF THIS API -->  "https://fakestoreapiserver.reactbd.org/api/amazonproducts" AND SHOW THE RESULT IN THE SCREEN IN THE PROPER CARD FORMAT .  -->
+<!-- ! FETCH THE DATA OF THIS API"https://fakestoreapiserver.reactbd.org/api/amazonproducts" AND SHOW THE RESULTIN THE SCREEN IN THE PROPER CARD FORMAT . -->
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    <div class="alldata"></div>
+  </head>
+  <body>
+    <div id="alldata"></div>
     <script>
-        async function getdata(){
-            try{
-                const api = await fetch("https://fakestoreapiserver.reactbd.org/api/amazonproducts");
-                const userdata = api.json();
-                console.log(userdata);
-            }
-            catch(e){
-                console.log("ERROR");
-            }
+      const container = document.getElementById("alldata");
+      async function getdata() {
+        try {
+          const api = await fetch(
+            "https://fakestoreapiserver.reactbd.org/api/amazonproducts",
+          );
+
+          const userdata = await api.json();
+          container.innerHTML = userdata.data
+            .map((user) => {
+              return `
+            <div class = "card">
+            <h3>${user.title}</h3>;
+            <h3>${user.price}</h3>;
+            <h3>${user.description}</h3>;
+            <h3>${user.category}</h3>;
+            <h3>${user.rating}</h3>;
+            </div>
+            `;
+            })
+            .join();
+        } catch (e) {
+          console.log("ERROR", e);
         }
-        getdata();
+      }
+      getdata();
     </script>
-</body>
+  </body>
 </html>
