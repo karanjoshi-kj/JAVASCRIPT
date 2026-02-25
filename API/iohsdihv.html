@@ -1,0 +1,38 @@
+<!--! FETCHING THE PHOTOS FROMM THE API . -->
+
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div id="alldata"></div>
+    <script>
+      const container = document.getElementById("alldata");
+      async function getdata() {
+        try {
+          const api = await fetch(
+            "https://fakestoreapiserver.reactbd.org/api/photos",
+          );
+
+          const userdata = await api.json();
+          container.innerHTML = userdata.data
+            .map((user) => {
+              return `
+            <div class = "card">
+           <img alt="image not found" src="${user.url}"
+            </div>
+            `;
+            })
+            .join();
+        } catch (e) {
+          console.log("ERROR", e);
+        }
+      }
+      getdata();
+    </script>
+  </body>
+</html>
