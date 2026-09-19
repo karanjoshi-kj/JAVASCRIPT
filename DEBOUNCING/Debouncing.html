@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   Search <input type="text" name="seach" id="" onkeyup="handlegetData()">
+    <script>
+
+        function callAPI(){
+            console.log("Api is beign Called...............");
+        }
+let cleartime;
+      function handlegetData(){
+        clearTimeout(cleartime);
+        cleartime=setTimeout(()=>{
+callAPI();
+        },500)
+      }
+    </script>
+</body>
+
+</html>
