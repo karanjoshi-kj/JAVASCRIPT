@@ -7,19 +7,27 @@
 </head>
 <body>
    Search <input type="text" name="seach" id="" onkeyup="handlegetData()">
-    <script>
-
-        function callAPI(){
-            console.log("Api is beign Called...............");
-        }
-let cleartime;
-      function handlegetData(){
+   SearchBar <input type="text" name="seach" id="" onkeyup="debounce()">
+   <script>
+function callAPI(){
+    console.log("Api is beign Called.............");
+}
+function searchingValues(){
+    console.log("Searching Api is beign Called.............");
+}
+// deboune ka resuable function
+function debounceresuable(actualfunction,delay){
+    let cleartime; //lexcial scope of the variable
+    return function(){
         clearTimeout(cleartime);
         cleartime=setTimeout(()=>{
-callAPI();
-        },500)
-      }
-    </script>
+            actualfunction(); //calling of the actual function
+        },delay)
+    }
+}
+const debounce=debounceresuable(searchingValues,600);
+// debounce();
+</script>
 </body>
 
 </html>
