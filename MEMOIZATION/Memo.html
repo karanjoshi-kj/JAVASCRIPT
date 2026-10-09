@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memoization</title>
+</head>
+<body>
+    <script>
+        function memonize(fn) {
+            const cache = {};
+
+            return function(n) {
+                if (cache[n] !== undefined) {
+                    console.log("FETCHED FROM CACHE:", n);
+                    return cache[n];
+                }
+
+                console.log("CALCULATING FOR:", n);
+                const result = fn(n); 
+                cache[n] = result;
+                return result;
+            };
+        }
+
+        function square(n) {
+            return n * n;
+        }
+
+        function cube(n) {
+            return n * n * n;
+        }
+
+        const memoizedSquare = memonize(square);
+        const memoizedCube = memonize(cube);
+
+        console.log(memoizedSquare(5)); 
+        console.log(memoizedSquare(5)); 
+
+        console.log(memoizedCube(3));   
+        console.log(memoizedCube(3));       
+    </script>
+</body>
+</html>
