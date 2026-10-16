@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <body>
+        <div id="container">
+            <button id="btn01">Button1</button>
+            <button>Button2</button>
+            <button>Button3</button>
+            <button>Button4</button>
+            <button>Button5</button>
+        </div>
+        <script>
+            // NORMAL DELEGATION
+            // const btn = document.querySelectorAll("button");
+            // btn.forEach((btn)=>{
+            //     btn.addEventListener("click" , ()=>{
+            //         alert("BUTTON IS CALLED")
+            //     })
+            // })
+
+            const btn01 = document.getElementById("btn01");
+            btn01.addEventListener("click" , ()=>{
+                alert("BUTTON 1 IS CLICKED")
+            })
+        </script>
+    </body>
+</body>
+</html>
