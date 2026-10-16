@@ -20,11 +20,19 @@
 
             parent.addEventListener("click" , (event)=>{
                 const btn = event.target.closest("button");   // CLOSEST ISLIYE LGYA H TAKI AGAR BUTTON KE ANDAR SPAN BHI HOGA TO VO BHI TARGET HOGA
-                if (!btn || !parent.contains(button))
+                if (!btn || !parent.contains(btn))
                 return;
 
-                const action = button.dataset.action ;
+                const action = btn.dataset.action ;
                 alert(action);
+
+                switch(action){
+                    case 'gm':alert("GOOD MORNING"); break;
+                    case 'Hi':alert("GOOD NIGHT"); break;
+                    case 'hello':alert("GOOD EVENING"); break;
+                    case 'Jay':alert("HELLO"); break;
+                    case 'Bie':alert("BYE-BYE"); break;
+                }
             })
             // NORMAL DELEGATION
             // const btn = document.querySelectorAll("button");
