@@ -8,13 +8,21 @@
 <body>
     <body>
         <div id="container">
-            <button id="btn01">Button1</button>
-            <button>Button2</button>
-            <button>Button3</button>
-            <button>Button4</button>
-            <button>Button5</button>
+            <button id="btn01">GOOD MORNING</button>
+            <button>HI</button>
+            <button>HLO</button>
+            <button>JI</button>
+            <button>BYE</button>
         </div>
         <script>
+
+            const parent = document.getElementById("container");
+
+            parent.addEventListener("click" , (event)=>{
+                const btn = event.target.closest("button");   // CLOSEST ISLIYE LGYA H TAKI AGAR BUTTON KE ANDAR SPAN BHI HOGA TO VO BHI TARGET HOGA
+                if (!btn || !parent.contains(button))
+                return;
+            })
             // NORMAL DELEGATION
             // const btn = document.querySelectorAll("button");
             // btn.forEach((btn)=>{
@@ -23,10 +31,10 @@
             //     })
             // })
 
-            const btn01 = document.getElementById("btn01");
-            btn01.addEventListener("click" , ()=>{
-                alert("BUTTON 1 IS CLICKED")
-            })
+            // const btn01 = document.getElementById("btn01");
+            // btn01.addEventListener("click" , ()=>{
+            //     alert("BUTTON 1 IS CLICKED")
+            // })
         </script>
     </body>
 </body>
