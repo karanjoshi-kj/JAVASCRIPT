@@ -8,11 +8,11 @@
 <body>
     <body>
         <div id="container">
-            <button id="btn01">GOOD MORNING</button>
-            <button>HI</button>
-            <button>HLO</button>
-            <button>JI</button>
-            <button>BYE</button>
+            <button data-action="gm">GOOD MORNING</button>
+            <button data-action="Hi">HI</button>
+            <button data-action="hello">HLO</button>
+            <button data-action="Jay">JI</button>
+            <button data-action="Bie">BYE</button>
         </div>
         <script>
 
@@ -22,6 +22,9 @@
                 const btn = event.target.closest("button");   // CLOSEST ISLIYE LGYA H TAKI AGAR BUTTON KE ANDAR SPAN BHI HOGA TO VO BHI TARGET HOGA
                 if (!btn || !parent.contains(button))
                 return;
+
+                const action = button.dataset.action ;
+                alert(action);
             })
             // NORMAL DELEGATION
             // const btn = document.querySelectorAll("button");
